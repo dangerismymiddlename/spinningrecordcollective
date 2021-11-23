@@ -1,0 +1,288 @@
+
+
+html {
+    box-sizing:border-box;
+}
+
+
+*, *:before, *:after {
+    box-sizing:inherit;
+}
+
+
+body {
+  font-family: ibm-plex-mono,sans-serif;
+font-weight: 400;
+font-style: normal;
+  margin: 40px;
+}
+
+
+h2, h3, h4, h5, h6 {
+  font-family: mundial;
+}
+
+h4 {
+  font-weight: 400;
+  margin-top: -40px;
+}
+
+
+h3 {
+font-family: mundial; san-serif;
+font-weight: 600;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+
+.header{
+  font-family: eckmannpsych-large; sans-serif;
+  text-align: center;
+}
+
+
+.navbar {
+  display: flex;
+  background-color: black;
+  font-size: 20px;
+  font-family: mundial, sans-serif;
+  font-weight: demi;
+  font-size: 30px;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: orange;
+  color: black;
+}
+
+
+
+.header2 {
+font-family: mundial, sans-serif;
+font-weight: 300;
+text-align: left;
+padding-top: 2em;
+
+}
+
+/*clickable links to parts of page grid*/
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+    grid-column-gap: 5px;
+  background-color: white;
+  padding: 15px;
+}
+
+.grid-container2 {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+    grid-column-gap: 5px;
+  background-color: white;
+  padding: 15px;
+}
+
+.grid-item a:hover {
+  color: orange;
+  background-color: white;
+  padding: 1px;
+  font-size: 30px;
+  text-align: justify;
+}
+
+/* home page */
+
+h3.home-titletext  {
+  font-family: mundial; san-serif;
+  font-weight: bold;
+  padding-top: 6em;
+  border: 1px white;
+ padding-bottom: 3em;
+}
+
+
+
+/* Column container */
+
+  @media  (min-width: 400px) {
+    body{
+      margin: 10px;
+    }
+
+    .row, .navbar {
+      flex-direction: column;
+    }
+
+    .header{
+      font-size: 40px;
+    }
+
+    h3.home-titletext{
+      font-size: 20px;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 30px;
+      margin-top: 10px;
+    }
+
+    h4 {
+      font-weight: 500;
+      font-size: 20px;
+      margin-top: -40px;
+    }
+
+    .grid-container2 {
+      display: block;
+
+      grid-template-columns: auto auto auto;
+        grid-column-gap: 5px;
+      background-color: white;
+      padding: 15px;
+    }
+
+  }
+
+
+  @media  (min-width: 600px) {
+    body{
+      margin: 15px;
+    }
+    .row, .navbar {
+      flex-direction: column;
+    }
+    .header{
+      font-size: 60px;
+    }
+
+    h3.home-titletext {
+      font-family: mundial; san-serif;
+      font-weight: regular;
+      font-size: 30px;
+      padding-top: 4em;
+      border: 1px solid white;
+     padding-bottom: 3em;
+     text-align: center;
+    }
+
+    h3 {
+      font-size: 40px;
+      margin-top: 10px;
+    }
+    h4 {
+      font-weight: 500;
+      font-size: 30px;
+      margin-top: -60px;
+    }
+
+    .grid-container2 {
+      display: inline-grid;
+      grid-template-columns: auto auto auto;
+        grid-column-gap: 5px;
+      background-color: white;
+      padding: 15px;
+    }
+  }
+
+
+  @media  (min-width: 900px) {
+    body{
+      margin:90px;
+    }
+    h3.home-titletext {
+      font-family: mundial; san-serif;
+      font-weight: bold;
+      font-size: 30px;
+      padding-top: 4em;
+      border: 1px solid white;
+     padding-bottom: 3em;
+     text-align: center;
+    }
+
+      h3 {
+        font-size: 40px;
+        margin-top: -10px;
+      }
+      h4 {
+        font-weight: 500;
+        margin-top: -60px;
+      }
+
+      .playlist {
+        margin: 60px;
+      }
+
+  }
+
+  @media  (min-width: 1200px) {
+    body{
+      margin: 180px;
+    }
+    h3.home-titletext {
+      font-family: mundial; san-serif;
+      font-weight: bold;
+      font-size: 40px;
+      padding-top: 4em;
+      border: 1px solid white;
+     padding-bottom: 3em;
+     text-align: center;
+    }
+
+    h3 {
+      font-size: 40px;
+      margin-top: -10px;
+    }
+    h4 {
+      font-weight: 400;
+      margin-top: -60px;
+    }
+
+    .playlist {
+      margin: 90px;
+    }
+
+  }
+
+
+  @media  (min-width: 1500px) {
+    body{
+      margin: 200px;
+    }
+    h3.home-titletext {
+      font-family: mundial; san-serif;
+      font-weight: bold;
+      font-size: 40px;
+      padding-top: 4em;
+      border: 1px solid white;
+     padding-bottom: 3em;
+     text-align: center;
+    }
+
+    h3 {
+      font-size: 40px;
+      margin-top: -10px;
+    }
+    h4 {
+      font-weight: 400;
+      margin-top: -60px;
+    }
+
+    .playlist {
+      margin: 90px;
+    }
+
+  }
